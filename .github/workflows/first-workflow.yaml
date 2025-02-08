@@ -9,5 +9,11 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: run bash command
-         run: echo "Hello, World!"      
+         run: ls      
          shell: bash
+       - name: checkout code
+         uses: actions/checkout@v4
+       - name: after checkout
+         run: ls
+         shell: bash
+             
