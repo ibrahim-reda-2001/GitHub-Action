@@ -1,13 +1,17 @@
 name: first-workflow
 on:
   repository_dispatch:
-    types: [test]
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+    inputs:
+      action:
+        description: 'Action to run'
+        required: true
+        type: string
+  # push:
+  #   branches:
+  #     - master
+  # pull_request:
+  #   branches:
+  #     - master
 jobs:
   first-workflow-job:
      name: first job
