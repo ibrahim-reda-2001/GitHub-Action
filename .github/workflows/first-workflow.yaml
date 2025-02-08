@@ -2,10 +2,10 @@ name: first-workflow
 on:
   workflow_dispatch:
     inputs:
-      action:
-        description: 'Action to run'
+      versionName:
+        description: 'Version Name'
         required: true
-        type: string
+        description: 'Version Name'
   # push:
   #   branches:
   #     - master
