@@ -5,7 +5,6 @@ on:
       versionName:
         description: 'Version Name'
         required: true
-        description: 'Version Name'
   # push:
   #   branches:
   #     - master
