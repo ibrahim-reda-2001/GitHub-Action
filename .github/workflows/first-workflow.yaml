@@ -1,26 +1,16 @@
 name: first-workflow
 on:
   workflow_dispatch:
-    inputs:
-      versionName:
-        description: 'Version Name'
-        required: true
-  # push:
-  #   branches:
-  #     - master
-  # pull_request:
-  #   branches:
-  #     - master
+  inputs:
+    nammVersion:
+      description: 'Namm version'
+      required: true
+      default: '1.0.0'
 jobs:
-  first-workflow-job:
-     name: first job
-     runs-on: ubuntu-latest
-     steps:
-       - name: run bash command
-         run: ls      
-         shell: bash
-       - name: checkout code
-         uses: actions/checkout@v4
-       - name: after checkout
-         run: ls
-         shell: bash    
+  first-workflow:
+    name: first-workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: show now
+        run: echo "now is $(date)"
+        
