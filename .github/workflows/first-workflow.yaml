@@ -1,0 +1,14 @@
+name: first-workflow
+on:
+  push:
+    branches:
+      - master
+jobs:
+  first-workflow-job
+     name: first job
+     runs-on: ubuntu-latest
+     steps:
+       - name: run bash command
+         run: echo "Hello, World!"      
+         shell: bash
+         
