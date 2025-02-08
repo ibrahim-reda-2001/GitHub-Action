@@ -1,11 +1,11 @@
 name: first-workflow
 on:
   workflow_dispatch:
-  inputs:
-    nammVersion:
-      description: 'Namm version'
-      required: true
-      default: '1.0.0'
+    inputs:
+      nammVersion:
+        description: 'Namm version'
+        required: true
+        default: '1.0.0'
 jobs:
   first-workflow:
     name: first-workflow
@@ -13,4 +13,3 @@ jobs:
     steps:
       - name: show now
         run: echo "now is $(date)"
-        
