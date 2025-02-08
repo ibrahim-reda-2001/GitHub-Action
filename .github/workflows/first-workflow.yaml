@@ -1,6 +1,6 @@
 name: first-workflow
 on:
-  repository_dispatch:
+  workflow_dispatch:
     inputs:
       action:
         description: 'Action to run'
